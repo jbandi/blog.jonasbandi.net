@@ -1,5 +1,0 @@
-baseURL = "https://blog.jonasbandi.net/"
-languageCode = "en-us"
-title = "My New Hugo Site"
-theme = "novela"
-disqusShortname = "blog-jonasbandi-net"
