@@ -20,22 +20,21 @@ const { frontmatter } = useData()
       >
         <li class="flex items-center space-x-2">
           <img
-            v-if="frontmatter.gravatar"
-            :src="'https://gravatar.com/avatar/' + frontmatter.gravatar"
+            :src="'https://gravatar.com/avatar/e6f60d485649907ed1efc82a3cfc1d28'"
             alt="author image"
             class="w-10 h-10 rounded-full"
           />
           <dl class="text-sm font-medium leading-5 whitespace-nowrap">
             <dt class="sr-only">Name</dt>
-            <dd class="text-gray-900">{{ frontmatter.author }}</dd>
-            <dt v-if="frontmatter.twitter" class="sr-only">Twitter</dt>
-            <dd v-if="frontmatter.twitter">
+            <dd class="text-gray-900">Jonas Bandi</dd>
+            <dt class="sr-only">Twitter</dt>
+            <dd>
               <a
-                :href="'https://twitter.com/' + frontmatter.twitter"
+                :href="'https://twitter.com/@jbandi'"
                 target="_blank"
                 rel="noopnener noreferrer"
                 class="link"
-                >{{ frontmatter.twitter }}</a
+                >@jbandi</a
               >
             </dd>
           </dl>

@@ -7,18 +7,18 @@
             class="inline-block mr-2"
             style="width: 36px; height: 31px"
             alt="logo"
-            src="/logo.svg"
+            src="https://www.jonasbandi.net/favicon.png"
           />
-          <span v-if="!isIndex" class="hidden md:inline">The Vue Point</span>
+          <span v-if="!isIndex" class="hidden md:inline">Brain Dump</span>
         </a>
         <div class="text-base text-gray-500 leading-5">
           <a class="hover:text-gray-700 mr-4" href="/feed.rss">RSS Feed</a>
           <a
             class="hover:text-gray-700"
-            href="https://v3.vuejs.org"
+            href="https://www.jonasbandi.net/"
             target="_blank"
             rel="noopener"
-            >Vuejs.org →</a
+            >Hompage →</a
           >
         </div>
       </nav>

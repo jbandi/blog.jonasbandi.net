@@ -8,6 +8,7 @@ module.exports = {
     const postDir = path.resolve(__dirname, '../posts')
     return fs
       .readdirSync(postDir)
+      .filter(file => file.endsWith('.md'))
       .map((file) => getPost(file, postDir, asFeed))
       .sort((a, b) => b.date.time - a.date.time)
   }
