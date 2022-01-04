@@ -11,6 +11,20 @@ export default defineConfig({
         type: 'image/x-icon',
         href: '/favicon.ico'
       }
+    ],
+    [
+      'meta',
+      {
+        property: 'og:image',
+        content: '/jb.png'
+      }
+    ],
+    [
+      'meta',
+      {
+        property: 'twitter:image',
+        content: '/jb.png'
+      }
     ]
   ],
   vite: {
