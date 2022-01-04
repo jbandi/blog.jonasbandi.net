@@ -25,7 +25,8 @@
     </div>
     <main class="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0">
       <Home v-if="isIndex" />
-      <Article v-else />
+      <Archive v-if="isArchive" />
+      <Article v-if="!isIndex && !isArchive" />
     </main>
   </div>
 </template>
@@ -35,7 +36,10 @@ import { computed } from 'vue'
 import { useRoute } from 'vitepress'
 import Home from './Home.vue'
 import Article from './Article.vue'
+import Archive from './Archive.vue'
 
 const route = useRoute()
-const isIndex = computed(() => route.path.replace(/index.html$/, '') === '/')
+const isIndex = computed(() => route.path.replace(/index.html$/, '') === '/' || route.path.includes('overview'))
+const isArchive = computed(() => route.path.includes('archive'))
+console.log('Rendering Layout', route.path, isIndex.value, isArchive.value);
 </script>

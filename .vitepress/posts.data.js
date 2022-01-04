@@ -9,6 +9,7 @@ module.exports = {
     return fs
       .readdirSync(postDir)
       .filter(file => file.endsWith('.md'))
+      // .filter(file => !file.endsWith('2021.md'))
       .map((file) => getPost(file, postDir, asFeed))
       .sort((a, b) => b.date.time - a.date.time)
   }
