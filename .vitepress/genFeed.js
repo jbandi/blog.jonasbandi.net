@@ -5,14 +5,14 @@ const { load } = require('./posts.data')
 const url = `https://blog.vuejs.org`
 
 const feed = new Feed({
-  title: 'The Vue Point',
-  description: 'The offical blog for the Vue.js project',
+  title: 'Blog of Jonas Bandi',
+  description: "Jonas' occasional brain dumps.",
   id: url,
   link: url,
   language: 'en',
-  image: 'https://vuejs.org/images/logo.png',
+  image: 'https://blog.jonasbandi.net/jb.png',
   favicon: `${url}/favicon.ico`,
-  copyright: 'Copyright (c) 2021-present, Yuxi (Evan) You and blog contributors'
+  copyright: 'Copyright (c) 2021-present, Jonas Bandi'
 })
 
 load(true).forEach((post) => {
@@ -32,7 +32,7 @@ load(true).forEach((post) => {
       {
         name: post.data.author,
         link: post.data.twitter
-          ? `https://twitter.com/${post.data.twitter}`
+          ? `https://twitter.com/@jbandi`
           : undefined
       }
     ],

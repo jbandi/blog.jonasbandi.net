@@ -12,20 +12,20 @@ export default defineConfig({
         href: '/favicon.ico'
       }
     ],
-    [
-      'meta',
-      {
-        property: 'og:image',
-        content: '/jb.png'
-      }
-    ],
-    [
-      'meta',
-      {
-        property: 'twitter:image',
-        content: '/jb.png'
-      }
-    ]
+    // [
+    //   'meta',
+    //   {
+    //     property: 'og:image',
+    //     content: '/jb.png'
+    //   }
+    // ],
+    // [
+    //   'meta',
+    //   {
+    //     property: 'twitter:image',
+    //     content: '/jb.png'
+    //   }
+    // ]
   ],
   vite: {
     build: {

@@ -2,12 +2,14 @@ lockfileVersion: 5.3
 
 specifiers:
   '@tailwindcss/typography': ^0.5.0
+  '@vueuse/head': ^0.7.4
   feed: ^4.2.1
   gray-matter: ^4.0.2
   tailwindcss: ^3.0.2
   vitepress: ^0.20.6
 
 dependencies:
+  '@vueuse/head': 0.7.4
   tailwindcss: 3.0.2
 
 devDependencies:
@@ -316,6 +318,12 @@ packages:
   /@vue/shared/3.2.26:
     resolution: {integrity: sha512-vPV6Cq+NIWbH5pZu+V+2QHE9y1qfuTq49uNWw4f7FDEeZaDU2H2cx5jcUZOAKW7qTrUS4k6qZPbMy1x4N96nbA==}
     dev: true
+
+  /@vueuse/head/0.7.4:
+    resolution: {integrity: sha512-cmps+wrdgL77V72vtjU6kaAunkG6GhswaMIQoh7Twc52ql4/p7i1Amd31LqnnvNF/bfuvzcXgYvsH8I7kimZmA==}
+    peerDependencies:
+      vue: '>=3'
+    dev: false
 
   /acorn-node/1.8.2:
     resolution: {integrity: sha512-8mt+fslDufLYntIoPAaIMUe/lrbrehIiwmR3t2k9LljIzoigEPF27eLk2hy8zSGzmR/ogr7zbRKINMo1u0yh5A==}

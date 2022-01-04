@@ -1,13 +1,21 @@
 <script setup>
+import { computed } from 'vue'
+import { useHead } from '@vueuse/head'
 import Date from './Date.vue'
 import Author from './Author.vue'
-import { computed } from 'vue'
 import { useData, useRoute } from 'vitepress'
 import { data as posts } from '../posts.data'
 
-const { frontmatter: data } = useData()
-
+const { frontmatter } = useData()
 const route = useRoute()
+
+const bannerImage = frontmatter.value.banner;
+useHead({
+  meta: [
+    { property: `og:image`, content: bannerImage },
+    { property: `twitter:image`, content: bannerImage },
+  ],
+})
 
 function findCurrentIndex() {
   return posts.findIndex((p) => p.href === route.path)
@@ -34,7 +42,7 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
           md:text-5xl md:leading-14
         "
       >
-        {{ data.title }}
+        {{ frontmatter.title }}
       </h1>
     </header>
 
