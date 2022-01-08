@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: 'Jonas Blog',
   description: 'Blog of Jonas Bandi',
-  banner: './images/vite.png',
+  banner: '/images/vite.png',
   head: [
     [
       'link',
