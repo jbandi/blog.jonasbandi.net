@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: 'Jonas Blog',
   description: 'Blog of Jonas Bandi',
+  banner: './images/vite.png',
   head: [
     [
       'link',
@@ -28,6 +29,7 @@ export default defineConfig({
     // ]
   ],
   vite: {
+    assetsInclude: ['**/*.jpg'],
     build: {
       minify: 'terser'
     }

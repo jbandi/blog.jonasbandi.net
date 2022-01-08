@@ -1,7 +1,7 @@
 ---
 title: A new beginning
 date: 2021-12-31
-banner: ./20211231-a-new-beginning/Hope.jpg
+image: ./images/vue.png
 ---
 
 In 2022 I hope to resurrect my blog here ...
